@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Echo - Your Personal AI Storyteller",
+    "slug": "echo-your-personal-ai-storyteller",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.rork.echo-your-personal-ai-storyteller"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.rork.echo-your-personal-ai-storyteller"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://rork.com/"
+        }
+      ]
+    ],
+    "scheme": "echo-stories",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
