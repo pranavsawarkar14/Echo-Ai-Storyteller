@@ -1,6 +1,5 @@
 import { useAuth } from '@clerk/clerk-expo';
 import { useState, useCallback } from 'react';
-import Constants from 'expo-constants';
 
 interface ApiResponse<T = any> {
   success: boolean;
@@ -35,10 +34,7 @@ export const useApiClient = () => {
   const { getToken } = useAuth();
   const [isLoading, setIsLoading] = useState(false);
 
-  // Use Constants to access environment variables for better compatibility with Expo and Vercel
-  const baseURL = process.env.EXPO_PUBLIC_API_BASE_URL || 
-                 (typeof Constants !== 'undefined' && Constants.expoConfig?.extra?.EXPO_PUBLIC_API_BASE_URL) || 
-                 'http://localhost:3001/api';
+  const baseURL = process.env.EXPO_PUBLIC_API_BASE_URL || 'http://localhost:3001/api';
 
   const makeRequest = useCallback(async <T = any>(
     endpoint: string,

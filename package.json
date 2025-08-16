@@ -5,10 +5,7 @@
   "scripts": {
     "start": "npx rork start -p vjqk9yef1lcmdn9nmzcbj --tunnel",
     "start-web": "npx rork start -p vjqk9yef1lcmdn9nmzcbj --web --tunnel",
-    "start-web-dev": "DEBUG=expo* npx rork start -p vjqk9yef1lcmdn9nmzcbj --web --tunnel",
-    "build": "expo export:web",
-    "vercel-build": "expo export:web",
-    "web": "expo start --web"
+    "start-web-dev": "DEBUG=expo* npx rork start -p vjqk9yef1lcmdn9nmzcbj --web --tunnel"
   },
   "dependencies": {
     "@clerk/clerk-expo": "^2.14.14",
@@ -62,10 +59,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
-    "@expo/next-adapter": "^5.0.2",
     "@expo/ngrok": "^4.1.0",
     "@types/react": "~19.0.10",
-    "next": "^14.0.4",
     "typescript": "~5.8.3"
   },
   "private": true
