@@ -1,17 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/expo"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "expo",
   "env": {
     "EXPO_PUBLIC_RORK_API_BASE_URL": "@rork_api_base_url",
     "EXPO_PUBLIC_GOOGLE_AI_API_KEY": "@google_ai_api_key",
@@ -19,5 +9,11 @@
     "EXPO_PUBLIC_PEXELS_API_KEY": "@pexels_api_key",
     "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "@clerk_publishable_key",
     "EXPO_PUBLIC_API_BASE_URL": "@api_base_url"
-  }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }

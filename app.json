@@ -25,7 +25,8 @@
       "package": "app.rork.echo-your-personal-ai-storyteller"
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro"
     },
     "plugins": [
       [
