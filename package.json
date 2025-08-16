@@ -6,9 +6,9 @@
     "start": "npx rork start -p vjqk9yef1lcmdn9nmzcbj --tunnel",
     "start-web": "npx rork start -p vjqk9yef1lcmdn9nmzcbj --web --tunnel",
     "start-web-dev": "DEBUG=expo* npx rork start -p vjqk9yef1lcmdn9nmzcbj --web --tunnel",
-    "build": "expo export -p web --output-dir dist",
-    "build:web": "expo export -p web --output-dir dist",
-    "export": "expo export -p web --output-dir dist"
+    "build": "npx expo export --platform web --output-dir dist",
+    "build:web": "npx expo export --platform web --output-dir dist",
+    "export": "npx expo export --platform web --output-dir dist"
   },
   "dependencies": {
     "@clerk/clerk-expo": "^2.14.14",
@@ -64,7 +64,6 @@
     "@babel/core": "^7.25.2",
     "@expo/cli": "^0.22.3",
     "@expo/ngrok": "^4.1.0",
-    "@expo/webpack-config": "^19.0.1",
     "@types/react": "~19.0.10",
     "typescript": "~5.8.3"
   },
